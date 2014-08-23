@@ -1,0 +1,94 @@
+{namespace bible autoescape="true"}
+/**
+ * Bible Reading Email Template
+ */
+{template .email }
+<html>
+    <head>
+        <title>Daily Bible Reading Reminder</title>
+        <link rel="shortcut icon" type="image/x-icon" href="http://aaivuw.com/favicon.ico" />
+        <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,300' rel='stylesheet' type='text/css' />
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css' />
+        <script type="text/javascript" src="bg.js"></script>
+        <style>
+        {literal}
+        body, html{
+            margin:0;
+            padding:0;
+            font-family: 'Playfair Display', sans-serif;
+        }
+        
+        #bg { 
+            width: 800px;
+            text-align: center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        h1 {
+            font-size: 44px;
+            color: #9b59b6;
+        }
+
+        h2 {
+            color: white;
+            font-size: 36px;
+            font-weight: 300;
+        }
+        .name {
+            position: absolute;
+            bottom: 0;
+            font-weight: 400;
+            padding-bottom: 16px;
+            padding-top: 16px;
+            width: 100%;
+            color: white;
+            font-size: 40px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        h3 {
+            margin-top: 10px;
+            font-weight: 400;
+            font-family: 'Lato', sans-serif;
+        }
+        h3, h4 {
+            margin-left: 48px;
+            padding-right: 48px;
+            margin-top: 0;
+            margin-bottom: 0;
+            text-align: left;
+        }
+        h4 {
+            font-weight: lighter;
+            margin-bottom: 28px;
+            font-family: 'Lato', sans-serif;
+        }
+        #filler {
+            height: calc(50% + 231px);
+            width: 100%;
+            padding-bottom: 10px;
+        }
+        p {
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+        }
+        {/literal}
+        </style>
+    </head>
+    <body style="line-height: 1.5; max-width: 800px;">
+        <img id="bg" src="http://students.washington.edu/glee23/img/dailydevos.jpg" style="width: 100%; max-width: 800px;"/>
+        <div style="margin: auto; font-size: 16px; padding: 16px; background-color: #dadfe1;">
+            <div style="background-color: #ecf0f1; padding: 16px;">
+	            <p style="margin-top: 0;">Hi,</p>
+	            <p>It looks like it's been a couple days since you last updated your Daily Devotional sheet. Hope you're still immersing yourself in the Word!</p>
+	            <p>Here's the link to the page again if you need it: <a href="https://docs.google.com/spreadsheets/d/1kH4D6t7EKvFTvary6Nd2GTGo8MSJXl5in7FeE8UuIc0/edit">Daily Devotional Spreadsheet</a></p>
+            	<p>Let us know if there's anything we can do to help!</p>
+            	<p>Thanks!</p>
+            </div>
+    	</div>
+    </body>
+</html>
+{/template}
+

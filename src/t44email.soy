@@ -1,0 +1,100 @@
+{namespace t44 autoescape="true"}
+/**
+ * Table For Four Email Template
+ * @param restaurant
+ * @param address
+ */
+{template .email }
+<html>
+    <head>
+        <title>Table For Four Assignment</title>
+        <link rel="shortcut icon" type="image/x-icon" href="http://aaivuw.com/favicon.ico" />
+        <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,300' rel='stylesheet' type='text/css' />
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css' />
+        <script type="text/javascript" src="bg.js"></script>
+        <style>
+        {literal}
+        body, html{
+            margin:0;
+            padding:0;
+            font-family: 'Playfair Display', sans-serif;
+        }
+        
+        #bg { 
+            width: 800px;
+            text-align: center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        h1 {
+            font-size: 44px;
+            color: #9b59b6;
+        }
+
+        h2 {
+            color: white;
+            font-size: 36px;
+            font-weight: 300;
+        }
+        .name {
+            position: absolute;
+            bottom: 0;
+            font-weight: 400;
+            padding-bottom: 16px;
+            padding-top: 16px;
+            width: 100%;
+            color: white;
+            font-size: 40px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        h3 {
+            margin-top: 10px;
+            font-weight: 400;
+            font-family: 'Lato', sans-serif;
+        }
+        h3, h4 {
+            margin-left: 48px;
+            padding-right: 48px;
+            margin-top: 0;
+            margin-bottom: 0;
+            text-align: left;
+        }
+        h4 {
+            font-weight: lighter;
+            margin-bottom: 28px;
+            font-family: 'Lato', sans-serif;
+        }
+        #filler {
+            height: calc(50% + 231px);
+            width: 100%;
+            padding-bottom: 10px;
+        }
+        p {
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+        }
+        {/literal}
+        </style>
+    </head>
+    <body style="line-height: 1.5; max-width: 800px;">
+        <img id="bg" src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-frc1/t31.0-8/1974342_10203424833363664_7912834006485761159_o.jpg" style="width: 100%; max-width: 800px;"/>
+        <div style="margin: auto; font-size: 16px; padding: 16px; background-color: #dadfe1;">
+            <div style="background-color: #ecf0f1; padding: 16px;">
+	            <p style="margin-top: 0;">Hi! Thank you for signing up for Table for Four!</p>
+	            <p style="margin-bottom: 0;">Your restaurant assignment is:</p>
+	            <h2 style="text-align: center; margin-top: 0px; margin-bottom: 0px; color: #9b59b6;">{$restaurant}</h2>
+	            <h4 style="text-align: center; margin-top: 0px; margin-bottom: 8px;">{$address}</h4>
+	            <p>Please be there <b>tomorrow (4/15) at 6pm</b> (or a little earlier)! (: Please be punctual so you can be on time for large group!</p>
+	            <p>If you arrive early, I'd advise you to wait outside for the rest of your members arrive, or if your restaurant looks busy to grab a table for your group.</p>
+	            <p>You might be wondering why I haven't told you who your other group members are. You'll see when you show up tomorrow! :) I know it's tempting to figure out who is going where beforehand, but please keep your assignment a secret! It's far more fun that way.</p>
+	            <p>If you are unable to rally your group of 4 tomorrow night, give me a call at <b>(425) 533-4528</b> after 6:15 PM and I'll try to help locate your missing member.</p>
+	            <p style="margin-bottom: 0;">I'm excited for you all! I hope it's a lot of fun and you are able to meet your brothers and sisters across campus!</p>
+            </div>
+    	</div>
+    </body>
+</html>
+{/template}
+
